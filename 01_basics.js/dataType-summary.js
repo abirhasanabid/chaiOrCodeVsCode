@@ -20,7 +20,7 @@ const myFuntion = function () {
     console.log('Hello, I am a function!');
 
 };
-myFuntion()
+myFuntion();
 
 
 
