@@ -20,9 +20,10 @@ console.log(null > 0);
 console.log(null <= 0);
 console.log(null >= 0);              /* equality check and comparision check work deffrently **COMPARISION CONVERT NULL TO NUMBER AND IT VALUE IS (0)   and it dosen't work for undefiend most of the case we should avoid this type of comparision*/
 console.log(undefined <= 0);
+console.log(undefined == 0);
 
 
-console.log(undefined <= 0);
+console.log(undefined >= 0);
 
 console.log(2 == '2');
 console.log(2 === '2'); /* the triple equal is strick checks it not checks only the value number it also check data types  */

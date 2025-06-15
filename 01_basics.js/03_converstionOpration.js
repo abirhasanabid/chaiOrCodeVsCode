@@ -25,7 +25,7 @@ const boolNumber = "DF";
 // 1=> TRUE
 // 0=> FALSE
 // ''=> FALSE
-// 'ABOID'=> TRUE
+// 'ABID'=> TRUE
 
 const justNumber = 12;
 // console.log(typeof justNumber);                   /* just number */
