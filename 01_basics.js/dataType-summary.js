@@ -47,3 +47,29 @@ let id2 = Symbol('123');
 // type of undefined = undefined;
 
 
+// ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+/* MEMORY--- WORK SYSTEAM */
+
+
+// 1. stack memory (Primitive data types)
+// 2. heap momory (Reference data types)
+
+const myNewYouTubeChannel = 'abidhasandotcom';
+let myChannel = myNewYouTubeChannel;
+myChannel = 'nothingNew';
+console.log(myNewYouTubeChannel);
+console.log(myChannel);                                                 
+
+
+
+const myData = {
+    name : 'Abid',
+    age : 20,
+};
+
+
+let myData2 = myData;
+myData2.age = 50;
+console.log(myData);
+console.log(myData2);
