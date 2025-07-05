@@ -50,9 +50,42 @@ const words = ['javascript', 'java', 'guava'];
 
 let wordsLength = 0;
 for (let i = 0; i < words.length; i++) {
-     wordsLength += words[i].length;
+    wordsLength += words[i].length;
 }
-console.log(wordsLength);
+// console.log(wordsLength);
 
 
+/* 1. Capitalize First Letter
+Input: "hello world" */
 
+const input = "hello world";
+const firstLetter = input.charAt(0).toUpperCase();
+const restLetter = input.slice(1);
+const ultimateResult = firstLetter.concat(restLetter);
+console.log(ultimateResult);
+
+
+/* Word Counter
+Input: " JavaScript is awesome " */
+
+const input2 = " JavaScript is awesome ";
+const justWords = input2.trim();
+const sliceTheWords = justWords.split(" ");
+console.log(sliceTheWords.length);
+
+/* 3. Censor Bad Word
+Input: "This is a bad word" */
+
+const input3 = "This is a bad word";
+const input3Arry = input3.split(" ");
+let replaceBadWord = "";
+for (let i = 0; i < input3Arry.length; i++) {
+if (input3Arry[i]==="bad") {
+    replaceBadWord+="***"
+} else {
+    replaceBadWord+=input3Arry[i]
+}
+
+}
+
+console.log(replaceBadWord.trim());
