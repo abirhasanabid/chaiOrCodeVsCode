@@ -30,3 +30,15 @@ const js = "javascript";
 const reversed = js.split('').reverse().join('');
 // console.log(reversed);
 
+
+/* 3. Check if a string is a palindrome
+(A word that reads the same forward and backward)
+
+🧪 Input: "madam" */
+
+const str3 = "madam";
+let reversed2 = '';
+for (let i = str3.length - 1; i >= 0; i--) {
+    reversed2 += str3[i];
+}
+console.log(str3 === reversed2);
