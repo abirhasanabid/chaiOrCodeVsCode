@@ -47,8 +47,39 @@ let emailInput = "   user@example.com   ";
 const finalEnput = emailInput.trim();
 if (finalEnput === "user@example.com") {
     console.log("Access Granted 👉");
-}else{
+} else {
     console.log("Access Invalid");
-    
+
 }
+
+
+let input = "   hello   world   ";
+const justTrim = input.trim();
+const trimAndReplace = justTrim.replace(' ', '');
+console.log(justTrim);
+console.log(trimAndReplace);
+
+
+// Check if the password is write or worng 
+
+let password = "   secret123";
+let finalPassword = password.trimStart();
+if (finalPassword === "secret123") {
+console.log("The password is correct");
+
+} else {
+console.log("Incorrect Password");
+};
+
+
+let city = "Dhaka ";
+console.log(`I live in ${city.trim()} .`);
+
+let inputName = "   Knight   Rider   ";
+const trimInputName = inputName.trim();
+console.log(trimInputName);
+const trimAndReplace1 = trimInputName.replace('  ', '');
+console.log(trimAndReplace1);
+
+
 
