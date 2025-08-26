@@ -65,10 +65,10 @@ console.log(trimAndReplace);
 let password = "   secret123";
 let finalPassword = password.trimStart();
 if (finalPassword === "secret123") {
-console.log("The password is correct");
+    console.log("The password is correct");
 
 } else {
-console.log("Incorrect Password");
+    console.log("Incorrect Password");
 };
 
 
@@ -82,4 +82,16 @@ const trimAndReplace1 = trimInputName.replace('  ', '');
 console.log(trimAndReplace1);
 
 
+// using trim to something search
+
+const search = ' Javascript ';
+console.log(search);
+
+if (search.trim().toLowerCase() === 'javascript') {
+    console.log("Search Matched");
+
+} else {
+    console.log("Search not found");
+
+}
 
