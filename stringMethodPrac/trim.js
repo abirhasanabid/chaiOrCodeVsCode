@@ -93,5 +93,23 @@ if (search.trim().toLowerCase() === 'javascript') {
 } else {
     console.log("Search not found");
 
+};
+
+
+// Practice 2: Trim with variables
+let username = "   john_doe   ";
+let cleanUsername = username.trim();
+console.log(cleanUsername); // "john_doe"
+
+
+// function parameter is test input
+
+function getCleanInput(text) {
+    const trimInput = text.trim();
+    return trimInput
 }
+
+const ans = getCleanInput(' test input');
+console.log(ans);
+
 
