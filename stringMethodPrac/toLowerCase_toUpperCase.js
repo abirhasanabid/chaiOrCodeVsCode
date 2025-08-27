@@ -49,5 +49,13 @@ for (let i = 0; i < text.length; i++) {
 console.log(uppercaseCount);
 
 
+// Practice 3: Lowercase in function
+// input is ' hello world '
+
+function normalizeText(text) {
+    const normalizeAns = text.toLowerCase().trim();
+    return normalizeAns
+}
+console.log(normalizeText(' hello world '));
 
 
