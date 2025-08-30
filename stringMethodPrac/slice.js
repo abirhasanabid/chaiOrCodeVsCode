@@ -10,3 +10,25 @@ console.log(justJavaNeg);
 // 3.Bang
 // 4.actJS
 // 5. loper
+
+
+// realLifie practice of slice.
+
+
+// File extension check
+// 👉 Extract the extension from a file name.
+let file = "profile.png";
+console.log(file.slice(-3));
+
+// Credit card masking
+// 👉 Show only the last 4 digits of a credit card.
+
+let card = "1234 5678 9876 5432";
+console.log(`**** **** **** ${card.slice(-4)}`);
+
+// Extract domain from email
+// 👉Get the part after @.
+
+let email = "user@example.com";
+const rateIndexOf = email.indexOf('@');
+console.log(email.slice(4));
