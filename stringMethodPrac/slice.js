@@ -32,3 +32,8 @@ console.log(`**** **** **** ${card.slice(-4)}`);
 let email = "user@example.com";
 const rateIndexOf = email.indexOf('@');
 console.log(email.slice(4));
+
+// Make it lowercase, remove spaces, then extract only the username (before @)
+
+let email2 = "   KNIGHTRIDER@GMAIL.COM   ";
+console.log(email2.toLowerCase().trim().slice(0,11));
