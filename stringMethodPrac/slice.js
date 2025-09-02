@@ -1,5 +1,5 @@
 let text = "JavaScript";
-const justJava = text.slice(0,4);
+const justJava = text.slice(0, 4);
 const justJavaNeg = text.slice(-6)
 
 console.log(justJava);
@@ -30,10 +30,12 @@ console.log(`**** **** **** ${card.slice(-4)}`);
 // 👉Get the part after @.
 
 let email = "user@example.com";
-const rateIndexOf = email.indexOf('@');
-console.log(email.slice(4));
+// const rateIndexOf = email.indexOf('@');
+// console.log(email.slice());
+console.log(email.slice(email.indexOf('@') + 1));
+
 
 // Make it lowercase, remove spaces, then extract only the username (before @)
 
 let email2 = "   KNIGHTRIDER@GMAIL.COM   ";
-console.log(email2.toLowerCase().trim().slice(0,11));
+console.log(email2.toLowerCase().trim().slice(0, 11));
