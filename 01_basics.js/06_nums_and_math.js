@@ -31,5 +31,11 @@ const minMaxResult = Math.floor(Math.random() * (max - min + 1) + min);
 console.log(minMaxResult);
 
 
+const fruitArray = ["apple", "banana", "mango", "orange", "grape"];
+const randomFruit = Math.floor(Math.random() * fruitArray.length);
+console.log(fruitArray[randomFruit]);
+
+
+
 
 
