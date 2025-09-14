@@ -106,7 +106,87 @@ function isGreaterThanTen(n) {
 
     // return n > 10;     /* this is the shorter version of 100 to 105 number line */
 };
-console.log(isGreaterThanTen(10));
-console.log(isGreaterThanTen(7));
-console.log(isGreaterThanTen(15));
+// console.log(isGreaterThanTen(10));
+// console.log(isGreaterThanTen(7));
+// console.log(isGreaterThanTen(15));
+
+
+// Write a function isPositive(num) that returns true if the number is greater than 0, otherwise false.
+
+function isPositive(num) {
+    return num > 0;
+}
+console.log(isPositive(-1));
+
+// Write a function makeFullName(firstName, lastName) that returns a string like:
+// "John Doe".
+
+function makeFullName(firstName, lastName) {
+    return `${firstName} ${lastName}`
+};
+console.log(makeFullName('Abid', 'Hasan'));
+
+
+// Voting Age Checker
+
+function canVote(age) {
+    if (age >= 18) {
+        return `Yes, you can vote`
+    }
+    else {
+        return `No you can't vote`
+    }
+}
+
+console.log(canVote(10));
+console.log(canVote(20));
+console.log(canVote(90));
+
+
+// Find the Biggest of Three Numbers
+
+function findBigger(a, b, c) {
+    // if (a > b && a > c) {
+    //     return a
+
+    // } else if (b > a && b > c) {
+    //     return b
+    // }
+    // else {
+    //     return c
+    // }
+
+    return Math.max(a, b, c);
+}
+
+console.log(findBigger(10, 20, 30));
+console.log(findBigger(50, 20, 30));
+console.log(findBigger(10, 20, 5));
+console.log(findBigger(50, 60, 70));
+
+// String Length Checker
+function checkStringLength(str) {
+    if (str.length > 5) {
+        return `long string`
+    } else {
+        return `short string`
+    }
+}
+console.log(checkStringLength('Hello'));
+console.log(checkStringLength('Javascipt'));
+
+// Find First Element of an Array
+
+const arr = [12, 435, 56, 6, 7];
+const fruits = ["apple", "mango", "banana"];
+function getFirstElement(element) {
+    if (element.length === 0) {
+        return `The aray is empty`
+    } else {
+        return element[0]
+    }
+}
+console.log(getFirstElement(arr));
+console.log(getFirstElement([]));
+console.log(getFirstElement(fruits));
 
