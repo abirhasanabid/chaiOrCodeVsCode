@@ -190,3 +190,14 @@ console.log(getFirstElement(arr));
 console.log(getFirstElement([]));
 console.log(getFirstElement(fruits));
 
+
+
+const user = {
+    name: "Abid",
+    age: 12
+}
+
+function forObj(obj) {
+    return obj;
+}
+console.log(forObj(user));
