@@ -21,10 +21,28 @@ console.log(chai(2));
 const orChai = (num) => {
     return num + 3
 }
-console.log(orChai(5));                 /* Two line code need this */ 
+console.log(orChai(5));                 /* Two line code need this */
 
 
-const arrow = () =>({userName : 'hitesh'}) /* The arrow and it value an objects */
+const arrow = () => ({ userName: 'hitesh' }) /* The arrow and it value an objects */
 console.log(arrow());
 
 
+// more about this keyword
+
+const person = {
+    name: "Alex",
+    sayName: function () {
+        return `${this.name} how are you ?`
+
+    }
+};
+console.log(person.sayName());
+
+
+// arrow function exercise
+
+// Write an arrow function that adds two numbers and prints the result.
+
+const addTwo = (num1, num2) => num1 + num2;
+console.log(addTwo(2, 3));
