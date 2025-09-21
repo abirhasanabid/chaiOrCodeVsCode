@@ -16,7 +16,7 @@ console.log(user);
 
 // Updatting property 
 
-user.isAdmin = false;
+user.isAdmin = true;
 console.log(user);
 
 // deleting property
