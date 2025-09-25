@@ -170,3 +170,49 @@ if (productPrice >= 500 || specialDay) {
     console.log(`no discount`);
 
 };
+
+// Mixed practice exercise
+// A cinema gives discounts:
+
+// If age < 12 → ticket = 50
+// If age ≥ 12 && age < 60 → ticket = 100
+// If age ≥ 60 → ticket = 70
+// But if it’s Friday OR the person is a student, they get 20 off.
+// 👉 Write code to calculate final ticket price.
+
+const age1 = 60;
+const isFriday = false;
+const isStudet = false;
+let TricketPrice;
+
+if (age1 < 12) {
+    TricketPrice = 50;
+} else if (age1 >= 12 && age1 < 60) {
+    TricketPrice = 100;
+} else {
+    TricketPrice = 70;
+
+}
+if (isFriday || isStudet) {
+    TricketPrice -= 20;
+};
+
+console.log(`The FinalTricket Price = ${TricketPrice}`);
+
+
+// A person can apply for a job if:
+
+// Age is between 18 and 35
+// AND has at least 2 years of experience
+// OR has a recommendation.
+
+const jobAge = 10;
+const experience = 1;
+const jobRecommendation = true;
+
+if ((jobAge >= 18 && jobAge <= 35 && experience >= 2) || jobRecommendation) {
+    console.log(`Eligible`);
+} else {
+    console.log(`Not Eligible`);
+
+};
