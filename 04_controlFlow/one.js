@@ -98,8 +98,75 @@ if (price >= 500) {
 const number = 62;
 if (number >= 10 && number <= 50) {
     console.log(`The 10 ad 50 between number ${number}`);
-    
+
 } else {
     console.log(`false`);
-    
+
+};
+
+
+// Check if a person’s age is between 18 and 60, and also check if they have a valid ID
+
+
+const personAge = 20;
+const id = false;
+if (personAge >= 18 && personAge <= 60 && id) {
+    console.log(`Age and id are valid`);
+
+} else {
+    console.log(`worng person`);
+
+};
+
+
+// Check if a number is positive, even, and less than 100.
+
+const num = 5;
+
+if (num > 0 && num % 2 === 0 && num < 100) {
+    console.log(`All condition are true`);
+
+} else {
+    console.log(`invalid`);
+
+}
+;
+
+// Mix of AND + OR
+
+
+// Check if a student passes:
+
+// Must have marks ≥ 40 AND attendance ≥ 75%
+// OR must have a teacher’s recommendation (recommendation = true).
+
+const stdMarks = 50;
+const attendance = 78;
+const recommendation = false;
+
+if ((stdMarks >= 40 && attendance >= 75) || recommendation) {
+    console.log(`The studednt pass`);
+
+} else {
+    console.log(`failed`);
+
+};
+
+
+// A shop gives discounts:
+
+// 20% off if price ≥ 500 OR it’s a special day (specialDay = true)
+// Otherwise, no discount.
+
+const productPrice = 1000;
+const specialDay = false;
+if (productPrice >= 500 || specialDay) {
+    const discount = 20 / 100;
+    const discountPrice = discount * productPrice;
+    const finalPrice = productPrice - discountPrice;
+    console.log(`Give me ${finalPrice}`);
+    console.log(`saved ${discountPrice}`);
+} else {
+    console.log(`no discount`);
+
 };
