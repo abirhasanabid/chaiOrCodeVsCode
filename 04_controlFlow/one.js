@@ -216,3 +216,65 @@ if ((jobAge >= 18 && jobAge <= 35 && experience >= 2) || jobRecommendation) {
     console.log(`Not Eligible`);
 
 };
+
+
+
+// A shop has a special sale:
+
+// If you buy more than 3 items AND total price > 1000 → 30% discount
+
+// Else if it’s a special day OR you have a coupon → 20% discount
+
+// Otherwise no discount.
+// 👉 Print final price.
+
+const items = 4;
+const isSpecialDay = false;
+const isCoupne = false;
+let totalPrice = 10000;
+
+if (items > 3 && totalPrice > 1000) {
+    const discount = 30 / 100;
+    const discountPrice = totalPrice * discount;
+    const finalPrice = totalPrice - discountPrice;
+    console.log(`save : ${discountPrice}`);
+    console.log(`finalPlrice : ${finalPrice}`);
+
+} else if (isSpecialDay || isCoupne) {
+    const discount = 20 / 100;
+    const discountPrice = totalPrice * discount;
+    const finalPrice = totalPrice - discountPrice
+    console.log(`save : ${discountPrice}`);
+    console.log(`finalPlrice : ${finalPrice}`);
+} else {
+    console.log(`no discount total Price is ${totalPrice}`);
+
+};
+
+
+// Student grading system:
+
+// Marks ≥ 80 → "A+"
+
+// Marks ≥ 60 AND attendance ≥ 75% → "A"
+
+// Marks ≥ 40 OR project submitted → "B"
+
+// Otherwise → "Fail".
+
+const marks1 = 20;
+const attendance1 = 75;
+const isSubmitted = false;
+if (marks1 >= 80) {
+    console.log(`you have got A+`);
+
+} else if (marks1 >= 60 && attendance1 >= 75) {
+    console.log(`you have got a solid A`);
+
+} else if (marks1 >= 40 || isSubmitted) {
+    console.log(`you have got a solid B`);
+
+}
+else {
+    console.log(`fail`);
+};
