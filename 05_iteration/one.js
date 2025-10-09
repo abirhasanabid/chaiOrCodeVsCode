@@ -65,6 +65,21 @@ for (let i = 1; i <= 50; i++) {
     if (element % 3 === 0 && element % 7 === 0) {
         break;
     }
-    console.log(element);
-
+    // console.log(element);
 };
+
+// Print numbers in a pattern like this:
+
+// 1 2 3
+// 1 2 3
+// 1 2 3
+
+for (let i = 1; i <= 3; i++) {
+    let row = "";
+    for (let j = 1; j <= 3; j++) {
+        row = row + j + " "
+    };
+    console.log(row);
+};
+
+
