@@ -36,3 +36,50 @@ while (i2 < str.length) {
     i2++;
 };
 
+// for loop practice started
+
+// Print numbers from 1 to 20.
+for (let i = 1; i <= 20; i++) {
+    // console.log(i);
+
+};
+
+// ✅ Practice 2: Print even numbers
+
+// Print all even numbers between 1 and 50.
+
+for (let i = 1; i <= 50; i++) {
+    if (i % 2 === 0) {
+        console.log(`even number ${i}`);
+    }
+};
+
+// Practice 3: Sum of numbers
+
+// Find the sum of numbers from 1 to 100.
+
+
+let sum1 = 0;
+for (let i = 1; i <= 100; i++) {
+    sum1 = sum1 + i;
+
+};
+console.log(sum1);
+
+// Practice 4: Count vowels
+
+let text = "javascript loops are fun";
+let arrOfVls = ['a', 'e', 'i', 'o', 'u'];
+let count = 0;
+
+for (let i = 0; i < text.length; i++) {
+    let mainText = text.toLowerCase();
+    let char = mainText[i];
+
+    if (arrOfVls.includes(char)) {
+        console.log(char);
+        count++
+    }
+}
+console.log(count);
+
