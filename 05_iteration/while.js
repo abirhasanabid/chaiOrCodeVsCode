@@ -83,3 +83,60 @@ for (let i = 0; i < text.length; i++) {
 }
 console.log(count);
 
+// ✅ Practice 5: Reverse a string
+
+const word = 'hello';
+let reverse_str = '';
+
+for (let i = word.length - 1; i >= 0; i--) {
+    reverse_str += word[i];
+};
+console.log(reverse_str);
+
+
+const reverseStr = word.split('').reverse().join('');
+console.log(reverseStr);
+
+
+// ✅ Practice 6: Highest number
+let nums = [12, 4, 56, 17, 3, 99, 24];
+let largeNum = nums[0];
+
+for (let i = 0; i < nums.length; i++) {
+    if (nums[i] > largeNum) {
+        largeNum = nums[i];
+    };
+
+};
+console.log(largeNum);
+
+// also we can do it using mathod. such as
+// large number method 
+const methodOfLargeNum = Math.max(...nums);
+console.log(methodOfLargeNum);
+
+
+
+let minNums2 = nums[0];
+
+for (let i = 0; i < nums.length; i++) {
+    if (nums[i] < minNums2) {
+        minNums2 = nums[i];
+    };
+};
+console.log(minNums2);
+
+
+// also we can do it using mathod. such as
+// lower number method 
+const methodOfMinNum = Math.min(...nums);
+console.log(methodOfMinNum);
+
+
+
+// ✅ Practice 7: Count occurrences
+
+let items = ["a", "b", "a", "c", "b", "a"];
+//  i will give iu ta short it letter
+
+
