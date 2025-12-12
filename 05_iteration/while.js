@@ -134,9 +134,32 @@ console.log(methodOfMinNum);
 
 
 
-// ✅ Practice 7: Count occurrences
+// ✅ Practice 7: Count occurrences  of (a)
 
 let items = ["a", "b", "a", "c", "b", "a"];
-//  i will give iu ta short it letter
+let count2 = 0;
+let iterateIteam = '';
 
+for (let i = 0; i < items.length; i++) {
+    iterateIteam += items[i];
+    if (items[i] == 'a') {
+        count2++;
+    }
+
+}
+console.log(iterateIteam);
+console.log(count2);
+
+
+// Loop through numbers from 1 to 50,
+// 👉 print each number,
+// 👉 but stop the loop when you find the first number that is divisible by both 3 and 7.
+
+for (let i = 1; i <= 50; i++) {
+    console.log(i);
+    if (i % 3 === 0 && i % 7 === 0) {
+        break;
+    }
+
+}
 
