@@ -161,7 +161,11 @@ for (let i = 1; i <= 50; i++) {
         break;
     }
 
-}
+};
+
+
+
+// level - 1 practice with deepsick
 
 // Exercise 1: Simple To-Do List Display
 
@@ -202,3 +206,91 @@ for (const product of products) {
         console.log(product.name);
     };
 };
+
+// Exercise 4: Create HTML List Items
+// Just create <li> tags as strings
+
+const colors = ["red", "green", "blue"];
+for (const color of colors) {
+    console.log(`<li>${color}</li>`);
+
+};
+
+
+// Level 2: Slightly Harder but Doable;
+
+// Exercise 5: Format Names Properly
+
+const names = ["alice", "BOB", "cHarLie"];
+const emptyNames = [];
+for (const name of names) {
+
+    let makeRight = name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
+    emptyNames.push(makeRight)
+
+}
+
+console.log(emptyNames);
+
+
+// Exercise 6: Count Items in Cart
+
+const carts = [
+    { item: "apple", quantity: 3 },
+    { item: "banana", quantity: 2 },
+    { item: "apple", quantity: 1 }
+];
+
+let itemSum = 0;
+for (const cart of carts) {
+    console.log(cart);
+
+    if (cart.item === 'apple') {
+        itemSum += cart.quantity
+    }
+
+};
+console.log(itemSum);
+
+// Exercise 7: Find Discounted Prices
+// Apply 20% discount to each product
+
+const products1 = [
+    { name: "Shirt", price: 25 },
+    { name: "Pants", price: 40 },
+    { name: "Shoes", price: 60 }
+];
+
+const discountPriceProducts = [];
+for (const product of products1) {
+    let discountPercentage = 20 / 100;
+    let discountAmount = product.price * discountPercentage;
+    let finalPrice = product.price - discountAmount;
+
+    discountPriceProducts.push({
+        name: product.name, price: finalPrice
+    })
+};
+
+console.log(discountPriceProducts);
+
+
+// Exercise 8: Check if User is Online
+// Count how many users are online
+
+const users = [
+    { name: "Abid", isOnline: true },
+    { name: "Korim", isOnline: false },
+    { name: "Rohim", isOnline: true }
+];
+
+
+let onlineUserCount = 0;
+for (const user of users) {
+    if (user.isOnline) {
+        onlineUserCount++;
+    };
+
+};
+
+console.log(onlineUserCount);
