@@ -163,3 +163,42 @@ for (let i = 1; i <= 50; i++) {
 
 }
 
+// Exercise 1: Simple To-Do List Display
+
+const todos = ["Buy milk", "Walk dog", "Study JavaScript"];
+let todoNums = 1;
+
+for (let i = 0; i < todos.length; i++) {
+    console.log(`${todoNums++}. ${todos[i]}`);
+}
+
+// Exercise 2: Calculate Total Price
+
+const prices = [10, 20, 30, 40];
+let sum2 = 0;
+
+for (let i = 0; i < prices.length; i++) {
+    sum2 += prices[i]
+
+};
+
+console.log(sum2);
+
+/* ****** important note is that I need to use {for of} in an array and {for in} for object */
+
+
+// Find products that cost more than $5
+
+const products = [
+    { name: "Apple", price: 1 },
+    { name: "Bread", price: 3 },
+    { name: "Milk", price: 2 },
+    { name: "Steak", price: 15 }
+];
+
+for (const product of products) {
+    let productPrice = product.price;
+    if (productPrice > 5) {
+        console.log(product.name);
+    };
+};
