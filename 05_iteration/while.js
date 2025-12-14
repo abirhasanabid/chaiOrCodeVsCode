@@ -368,3 +368,54 @@ for (const menuItem of menuItems) {
     console.log(`<a href="${menuItem.link}">${menuItem.name}</a>`);
 
 };
+
+
+// Level 3+: Real Mini-Projects (Combine All Skills);
+
+// Project 1: Personal Budget Tracker`
+
+const expenses = [
+    { category: "Food", amount: 50, date: "2023-10-01" },
+    { category: "Transport", amount: 30, date: "2023-10-02" },
+    { category: "Food", amount: 20, date: "2023-10-03" },
+    { category: "Entertainment", amount: 40, date: "2023-10-04" },
+    { category: "Transport", amount: 25, date: "2023-10-05" }
+];
+
+// Tasks:
+// 1. Calculate total spent
+// 2. Find most expensive expense
+// 3. Group expenses by category with totals
+// 4. Find average expense amount
+// 5. Filter expenses over $35
+
+// Expected output example:
+// Total spent: $165
+// Most expensive: Entertainment - $40
+// By category: Food: $70, Transport: $55, Entertainment: $40
+// Average: $33
+// Over $35: Entertainment $40, Food $50
+
+
+console.log(expenses);
+
+let spentSum = 0;
+let expensiveExpense = 0;
+
+for (const expense of expenses) {
+    // for total spent
+    spentSum += expense.amount;
+
+    // most expensive expense
+    if (expensiveExpense < expense.amount) {
+        expensiveExpense = expense.amount;
+    }
+    if (expense.category === expense.category) {
+        console.log(expense.amount + expense.amount);
+        
+    }
+
+};
+console.log(`totalSpent ${spentSum}`); /* total spent */
+console.log(`most expensive expense ${expensiveExpense}`); /* most expensive expense */
+
