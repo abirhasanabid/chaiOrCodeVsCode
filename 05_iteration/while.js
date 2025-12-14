@@ -294,3 +294,77 @@ for (const user of users) {
 };
 
 console.log(onlineUserCount);
+
+
+// level 3
+// real simple projects
+
+// Project 1: Grade Calculator
+
+// 1. Calculate average
+// 2. Find highest grade
+// 3. Find lowest grade
+// 4. Display all three
+
+const grades = [85, 90, 78, 92, 88];
+
+let sumOfGrades = 0;
+let heigGrade = grades[0];
+let lowerGrade = grades[0];
+
+for (const grade of grades) {
+    sumOfGrades += grade;
+
+
+    if (heigGrade < grade) {
+        heigGrade = grade;
+    } else if (lowerGrade > grade) {
+        lowerGrade = grade;
+    }
+
+};
+const avgOfGrades = (sumOfGrades / grades.length).toFixed(2);
+
+console.log(`avarageOfGrade ${avgOfGrades}`);
+console.log(`heiGrade ${heigGrade}`);
+console.log(`lowGrade ${lowerGrade}`);
+
+
+// Project 2: Simple Search
+
+// User searches for "app"
+// Find all products containing "app" (case insensitive)
+// Expected: ["apple", "pineapple"]
+
+const products2 = ["apple", "banana", "orange", "grape", "pineapple"];
+
+const products2Empty = [];
+
+for (const product2 of products2) {
+    if (product2.toLowerCase().includes('app')) {
+        products2Empty.push(product2)
+    }
+
+};
+
+console.log(products2Empty);
+
+
+// Project 3: Build a Menu
+
+// Create navigation HTML:
+// <a href="/">Home</a>
+// <a href="/about">About</a>
+// <a href="/contact">Contact</a>
+
+
+const menuItems = [
+    { name: "Home", link: "/" },
+    { name: "About", link: "/about" },
+    { name: "Contact", link: "/contact" }
+];
+
+for (const menuItem of menuItems) {
+    console.log(`<a href="${menuItem.link}">${menuItem.name}</a>`);
+
+};
