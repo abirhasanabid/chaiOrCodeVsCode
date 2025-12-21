@@ -396,9 +396,6 @@ const expenses = [
 // Average: $33
 // Over $35: Entertainment $40, Food $50
 
-
-console.log(expenses);
-
 let spentSum = 0;
 let expensiveExpense = 0;
 
@@ -410,12 +407,14 @@ for (const expense of expenses) {
     if (expensiveExpense < expense.amount) {
         expensiveExpense = expense.amount;
     }
-    if (expense.category === expense.category) {
-        console.log(expense.amount + expense.amount);
-        
+
+    // Filtering expenses over $35
+    if (expense.amount > 35) {
+        console.log('over 35', expense.category, expense.amount);
     }
 
 };
-console.log(`totalSpent ${spentSum}`); /* total spent */
-console.log(`most expensive expense ${expensiveExpense}`); /* most expensive expense */
+console.log("totalSpent", spentSum); /* total spent */
+console.log("most expensive expense", expensiveExpense); /* most expensive expense */
+console.log("everage spent amount", "$", (spentSum / expenses.length));  // calculate avarage
 
