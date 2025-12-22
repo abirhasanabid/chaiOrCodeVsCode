@@ -418,3 +418,44 @@ console.log("totalSpent", spentSum); /* total spent */
 console.log("most expensive expense", expensiveExpense); /* most expensive expense */
 console.log("everage spent amount", "$", (spentSum / expenses.length));  // calculate avarage
 
+
+// Project 2: Student Grade Manager
+
+const students = [
+    { name: "Alice", grades: [85, 90, 78] },
+    { name: "Bob", grades: [92, 88, 95] },
+    { name: "Charlie", grades: [76, 85, 80] },
+    { name: "Diana", grades: [88, 92, 87] }
+];
+
+// Tasks:
+// 1. Calculate each student's average grade
+// 2. Find the student with highest average
+// 3. Calculate class average
+// 4. Assign letter grades (A: 90+, B: 80-89, C: 70-79, D: 60-69, F: <60)
+// 5. Find students who need improvement (grade < 80)
+
+// Expected:
+// Averages: Alice: 84.3, Bob: 91.7, Charlie: 80.3, Diana: 89
+// Top student: Bob (91.7)
+// Class average: 86.3
+// Letter grades: Alice: B, Bob: A, Charlie: B, Diana: B
+// Needs improvement: Alice, Charlie
+
+// console.log(students);
+
+let stdGrdSum = 0;
+let countstd = 0;
+for (const student of students) {
+    let stdGrades = student.grades
+
+    for (const stdGrade of stdGrades) {
+        // console.log(stdGrade);
+        stdGrdSum += stdGrade;
+        countstd++
+
+    }
+
+    console.log(student.name ,stdGrdSum/countstd);
+}
+
