@@ -1,6 +1,6 @@
 let i = 1;
 while (i <= 10) {
-    console.log(`${i}`);
+    // console.log(`${i}`);
     i++;
 };
 
@@ -8,14 +8,14 @@ while (i <= 10) {
 // Print even numbers from 2 to 10.
 let even = 2;
 while (even <= 10) {
-    console.log(even);
+    // console.log(even);
     even += 2;
 };
 
 // Count down from 10 to 1.
 let decrement = 10;
 while (decrement >= 1) {
-    console.log(decrement);
+    // console.log(decrement);
     decrement--;
 };
 
@@ -26,13 +26,13 @@ let sum = 0;
 for (let i = 1; i <= 10; i++) {
     sum += i;
 }
-console.log(sum);
+// console.log(sum);
 
 
 let str = 'hello';
 let i2 = 0;
 while (i2 < str.length) {
-    console.log(str[i2]);
+    // console.log(str[i2]);
     i2++;
 };
 
@@ -50,7 +50,7 @@ for (let i = 1; i <= 20; i++) {
 
 for (let i = 1; i <= 50; i++) {
     if (i % 2 === 0) {
-        console.log(`even number ${i}`);
+        // console.log(`even number ${i}`);
     }
 };
 
@@ -64,7 +64,7 @@ for (let i = 1; i <= 100; i++) {
     sum1 = sum1 + i;
 
 };
-console.log(sum1);
+// console.log(sum1);
 
 // Practice 4: Count vowels
 
@@ -77,11 +77,11 @@ for (let i = 0; i < text.length; i++) {
     let char = mainText[i];
 
     if (arrOfVls.includes(char)) {
-        console.log(char);
+        // console.log(char);
         count++
     }
 }
-console.log(count);
+// console.log(count);
 
 // ✅ Practice 5: Reverse a string
 
@@ -91,11 +91,11 @@ let reverse_str = '';
 for (let i = word.length - 1; i >= 0; i--) {
     reverse_str += word[i];
 };
-console.log(reverse_str);
+// console.log(reverse_str);
 
 
 const reverseStr = word.split('').reverse().join('');
-console.log(reverseStr);
+// console.log(reverseStr);
 
 
 // ✅ Practice 6: Highest number
@@ -108,12 +108,12 @@ for (let i = 0; i < nums.length; i++) {
     };
 
 };
-console.log(largeNum);
+// console.log(largeNum);
 
 // also we can do it using mathod. such as
 // large number method 
 const methodOfLargeNum = Math.max(...nums);
-console.log(methodOfLargeNum);
+// console.log(methodOfLargeNum);
 
 
 
@@ -124,13 +124,13 @@ for (let i = 0; i < nums.length; i++) {
         minNums2 = nums[i];
     };
 };
-console.log(minNums2);
+// console.log(minNums2);
 
 
 // also we can do it using mathod. such as
 // lower number method 
 const methodOfMinNum = Math.min(...nums);
-console.log(methodOfMinNum);
+// console.log(methodOfMinNum);
 
 
 
@@ -147,8 +147,8 @@ for (let i = 0; i < items.length; i++) {
     }
 
 }
-console.log(iterateIteam);
-console.log(count2);
+// console.log(iterateIteam);
+// console.log(count2);
 
 
 // Loop through numbers from 1 to 50,
@@ -156,7 +156,7 @@ console.log(count2);
 // 👉 but stop the loop when you find the first number that is divisible by both 3 and 7.
 
 for (let i = 1; i <= 50; i++) {
-    console.log(i);
+    // console.log(i);
     if (i % 3 === 0 && i % 7 === 0) {
         break;
     }
@@ -173,7 +173,7 @@ const todos = ["Buy milk", "Walk dog", "Study JavaScript"];
 let todoNums = 1;
 
 for (let i = 0; i < todos.length; i++) {
-    console.log(`${todoNums++}. ${todos[i]}`);
+    // console.log(`${todoNums++}. ${todos[i]}`);
 }
 
 // Exercise 2: Calculate Total Price
@@ -186,7 +186,7 @@ for (let i = 0; i < prices.length; i++) {
 
 };
 
-console.log(sum2);
+// console.log(sum2);
 
 /* ****** important note is that I need to use {for of} in an array and {for in} for object */
 
@@ -203,7 +203,7 @@ const products = [
 for (const product of products) {
     let productPrice = product.price;
     if (productPrice > 5) {
-        console.log(product.name);
+        // console.log(product.name);
     };
 };
 
@@ -212,7 +212,7 @@ for (const product of products) {
 
 const colors = ["red", "green", "blue"];
 for (const color of colors) {
-    console.log(`<li>${color}</li>`);
+    // console.log(`<li>${color}</li>`);
 
 };
 
@@ -230,7 +230,7 @@ for (const name of names) {
 
 }
 
-console.log(emptyNames);
+// console.log(emptyNames);
 
 
 // Exercise 6: Count Items in Cart
@@ -243,14 +243,14 @@ const carts = [
 
 let itemSum = 0;
 for (const cart of carts) {
-    console.log(cart);
+    // console.log(cart);
 
     if (cart.item === 'apple') {
         itemSum += cart.quantity
     }
 
 };
-console.log(itemSum);
+// console.log(itemSum);
 
 // Exercise 7: Find Discounted Prices
 // Apply 20% discount to each product
@@ -272,7 +272,7 @@ for (const product of products1) {
     })
 };
 
-console.log(discountPriceProducts);
+// console.log(discountPriceProducts);
 
 
 // Exercise 8: Check if User is Online
@@ -293,7 +293,7 @@ for (const user of users) {
 
 };
 
-console.log(onlineUserCount);
+// console.log(onlineUserCount);
 
 
 // level 3
@@ -325,9 +325,9 @@ for (const grade of grades) {
 };
 const avgOfGrades = (sumOfGrades / grades.length).toFixed(2);
 
-console.log(`avarageOfGrade ${avgOfGrades}`);
-console.log(`heiGrade ${heigGrade}`);
-console.log(`lowGrade ${lowerGrade}`);
+// console.log(`avarageOfGrade ${avgOfGrades}`);
+// console.log(`heiGrade ${heigGrade}`);
+// console.log(`lowGrade ${lowerGrade}`);
 
 
 // Project 2: Simple Search
@@ -347,7 +347,7 @@ for (const product2 of products2) {
 
 };
 
-console.log(products2Empty);
+// console.log(products2Empty);
 
 
 // Project 3: Build a Menu
@@ -365,7 +365,7 @@ const menuItems = [
 ];
 
 for (const menuItem of menuItems) {
-    console.log(`<a href="${menuItem.link}">${menuItem.name}</a>`);
+    // console.log(`<a href="${menuItem.link}">${menuItem.name}</a>`);
 
 };
 
@@ -410,13 +410,13 @@ for (const expense of expenses) {
 
     // Filtering expenses over $35
     if (expense.amount > 35) {
-        console.log('over 35', expense.category, expense.amount);
+        // console.log('over 35', expense.category, expense.amount);
     }
 
 };
-console.log("totalSpent", spentSum); /* total spent */
-console.log("most expensive expense", expensiveExpense); /* most expensive expense */
-console.log("everage spent amount", "$", (spentSum / expenses.length));  // calculate avarage
+// console.log("totalSpent", spentSum); /* total spent */
+// console.log("most expensive expense", expensiveExpense); /* most expensive expense */
+// console.log("everage spent amount", "$", (spentSum / expenses.length));  // calculate avarage
 
 
 // Project 2: Student Grade Manager
@@ -489,8 +489,51 @@ for (const student of students) {
     }
 
 
-    console.log(student.name, stdAvg, gradeStr); /* each std avg */ // 4. Assign letter grades
+    // console.log(student.name, stdAvg, gradeStr); /* each std avg */ // 4. Assign letter grades
 }
-console.log('height avg grade', heightAvgStdName, heightAvg);    // heigt avg
-console.log('need improvement :' ,needImprovement.join(", ")); /* need improvement */
+// console.log('height avg grade', heightAvgStdName, heightAvg);    // heigt avg
+// console.log('need improvement :' ,needImprovement.join(", ")); /* need improvement */
+
+// Project 3: E-commerce Product Filter
+const products3 = [
+    { id: 1, name: "iPhone 13", price: 799, brand: "Apple", category: "Phone", inStock: true },
+    { id: 2, name: "Galaxy S21", price: 699, brand: "Samsung", category: "Phone", inStock: false },
+    { id: 3, name: "MacBook Air", price: 999, brand: "Apple", category: "Laptop", inStock: true },
+    { id: 4, name: "ThinkPad", price: 899, brand: "Lenovo", category: "Laptop", inStock: true },
+    { id: 5, name: "iPad", price: 329, brand: "Apple", category: "Tablet", inStock: true },
+    { id: 6, name: "Surface Pro", price: 899, brand: "Microsoft", category: "Tablet", inStock: false }
+];
+
+// Test cases:
+// 1. All Apple products
+// 2. Products under $500
+// 3. Products in stock
+// 4. Apple laptops under $1000
+
+
+let allAppleProductName = [];
+let underPrice = [];
+let inStokProduct = [];
+let appleLaptop = [];
+
+for (const product3 of products3) {
+    if (product3.brand.toLowerCase() === 'apple') {
+        allAppleProductName.push(product3.name);
+    }
+    if (product3.price <= 500) {
+        underPrice.push(product3.name);
+    }
+    if (product3.inStock) {
+        inStokProduct.push(product3.name);
+    }
+    if (product3.brand.toLowerCase() === 'apple' && product3.category.toLowerCase() === 'laptop' && product3.price <= 1000 ) {
+        appleLaptop.push(product3.name)
+    }
+
+
+}
+console.log('Apple products :', allAppleProductName.join(', '));
+console.log('Products under $500 :', underPrice.join(', '));
+console.log('stock product :', inStokProduct.join(', '));
+console.log('Apple laptops under $1000 :', appleLaptop.join(', '));
 
