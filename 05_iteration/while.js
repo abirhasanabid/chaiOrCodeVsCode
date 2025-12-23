@@ -438,24 +438,59 @@ const students = [
 // Expected:
 // Averages: Alice: 84.3, Bob: 91.7, Charlie: 80.3, Diana: 89
 // Top student: Bob (91.7)
-// Class average: 86.3
 // Letter grades: Alice: B, Bob: A, Charlie: B, Diana: B
 // Needs improvement: Alice, Charlie
 
-// console.log(students);
-
-let stdGrdSum = 0;
-let countstd = 0;
+let heightAvg = 0;
+let heightAvgStdName = '';
+let needImprovement = [];
 for (const student of students) {
-    let stdGrades = student.grades
+    let stdGrdSum = 0;
+    let countstd = 0;
 
-    for (const stdGrade of stdGrades) {
-        // console.log(stdGrade);
+    let stdGrades = student.grades;
+
+    for (const stdGrade of stdGrades) {                                  /* each std avg */
         stdGrdSum += stdGrade;
         countstd++
 
     }
+    let stdAvg = parseFloat((stdGrdSum / countstd).toFixed(2));
 
-    console.log(student.name ,stdGrdSum/countstd);
+    // heigt avg
+    if (stdAvg > heightAvg) {
+        heightAvg = stdAvg
+        heightAvgStdName = student.name;
+    }
+
+    // 4. Assign letter grades (A: 90+, B: 80-89, C: 70-79, D: 60-69, F: <60)
+    let gradeStr = '';
+    if (stdAvg >= 90) {
+        gradeStr = 'A'
+
+    }
+    else if (stdAvg >= 80) {
+        gradeStr = 'B'
+    }
+    else if (stdAvg >= 70) {
+        gradeStr = 'C'
+
+    }
+    else if (stdAvg >= 60) {
+        gradeStr = 'D'
+    }
+    else {
+        gradeStr = 'F'
+    };
+
+    // 5. Find students who need improvement (grade < 80)
+    if (stdAvg < 85) {
+        needImprovement.push(student.name)
+    }
+
+
+    console.log(student.name, stdAvg, gradeStr); /* each std avg */ // 4. Assign letter grades
 }
+console.log('height avg grade', heightAvgStdName, heightAvg);    // heigt avg
+console.log('need improvement :' ,needImprovement.join(", ")); /* need improvement */
 
